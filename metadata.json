@@ -1,0 +1,6 @@
+{
+  "name": "ScholarElite",
+  "description": "An elite tutor and academic journey management platform for students and parents, featuring interactive portals, curriculum roadmaps, monthly subscription registration, and live tutoring chat powered by the Gemini API.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
