@@ -28,7 +28,7 @@ export default function CurriculumJourney() {
       url: `${origin}/journey?module=${moduleId}`,
       identifier: `module-${moduleId}`,
       title: moduleTitle,
-      language: "zh_TW" // Traditional Chinese as requested by user template or default fallback
+      language: "ENG" // English as requested by user template
     };
   };
 
@@ -289,7 +289,7 @@ export default function CurriculumJourney() {
               Thread: <span className="text-slate-900 font-sans font-extrabold normal-case">{selectedModule.title}</span>
             </h3>
             <span className="text-[10px] font-mono text-slate-400 bg-white border px-2 py-0.5 rounded">
-              Language: Traditional Chinese (zh_TW)
+              Language: English (ENG)
             </span>
           </div>
           

@@ -83,7 +83,7 @@ export default function SocialForum() {
           </h1>
 
           <p className="text-slate-400 text-xs md:text-sm leading-relaxed">
-            Welcome to the Elite Social Forum. Engage with fellow researchers and published faculty in high-caliber debates. We utilize live verified Disqus comments in <span className="text-slate-200 underline font-mono">Traditional Chinese (zh_TW)</span> to coordinate scholarly interactions.
+            Welcome to the Elite Social Forum. Engage with fellow researchers and published faculty in high-caliber debates. We utilize live verified Disqus comments in <span className="text-slate-200 underline font-mono">English (ENG)</span> to coordinate scholarly interactions.
           </p>
         </div>
       </div>
@@ -194,7 +194,7 @@ export default function SocialForum() {
                   ACTIVE DISCUSSION THREAD
                 </span>
                 <span className="text-[10px] font-mono text-slate-500 bg-slate-50 border px-2.5 py-0.5 rounded">
-                  Locale: Traditional Chinese (zh_TW)
+                  Locale: English (ENG)
                 </span>
               </div>
 
@@ -246,7 +246,7 @@ export default function SocialForum() {
                   url: activeArticle.url,
                   identifier: activeArticle.id,
                   title: activeArticle.title,
-                  language: "zh_TW"
+                  language: "ENG"
                 }}
               />
             </div>
