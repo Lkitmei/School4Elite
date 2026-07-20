@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Compass, Calendar, BookOpen, Clock, Landmark, GraduationCap, Users, MessageSquare, ChevronRight, Menu, X, Landmark as School, Sparkles, MapPin, Layers } from "lucide-react";
+import { Compass, Calendar, BookOpen, Clock, Landmark, GraduationCap, Users, MessageSquare, ChevronRight, Menu, X, Landmark as School, Sparkles, MapPin, Layers, Globe } from "lucide-react";
 import LandingPage from "./components/LandingPage";
 import TutorSearch from "./components/TutorSearch";
 import ModuleBrowser from "./components/ModuleBrowser";
@@ -8,6 +8,7 @@ import ParentPortal from "./components/ParentPortal";
 import CurriculumJourney from "./components/CurriculumJourney";
 import SupportChat from "./components/SupportChat";
 import SubscriptionWizard from "./components/SubscriptionWizard";
+import SocialForum from "./components/SocialForum";
 
 export default function App() {
   const [activeTab, setActiveTab] = useState("home");
@@ -37,6 +38,7 @@ export default function App() {
     { id: "student", label: "Student Portal (Alex)", icon: GraduationCap },
     { id: "parent", label: "Parent Control (Sarah)", icon: Calendar },
     { id: "journey", label: "Curriculum Journey", icon: BookOpen },
+    { id: "social", label: "Social", icon: Globe, badge: "Hub" },
     { id: "support", label: "Live Support Chat", icon: MessageSquare, badge: "Live" }
   ];
 
@@ -184,6 +186,8 @@ export default function App() {
         {activeTab === "parent" && <ParentPortal />}
         
         {activeTab === "journey" && <CurriculumJourney />}
+        
+        {activeTab === "social" && <SocialForum />}
         
         {activeTab === "support" && <SupportChat />}
       </main>
